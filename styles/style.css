@@ -1,68 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-html{
+
+html {
     font-size: 16px;
     /* color-scheme: dark light; */
     font-family: 'work sans';
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
     outline: 1px solid rgb(253, 217, 126);
 }
-.dip{
+
+.dip {
     display: none;
 }
-:root{
-    --default:#FF42A5;
-    --second:rgba(11, 2, 35, 1);
-    --font-color:#534C64;
+
+:root {
+    --default: #FF42A5;
+    --second: rgba(11, 2, 35, 1);
+    --font-color: #534C64;
 }
+
 /* navbar  */
-nav{
+nav {
     width: 100vw;
-    box-shadow: 0px 10px 5px rgba(11, 2, 35,0.1);
+    box-shadow: 0px 10px 5px rgba(11, 2, 35, 0.1);
 }
-.nav-elements{
-    margin:0 auto;
+
+.nav-elements {
+    margin: 0 auto;
     padding: 37px 180px 37px 260px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
 }
-.nav-right{
+
+.nav-right {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
 }
-.nav-left{
+
+.nav-left {
     display: flex;
     align-items: center;
     font-size: 2.8rem;
     font-weight: 600;
     color: var(--second);
-    > span{
+
+    >span {
         padding-left: 20px;
         font-size: 2.8rem;
         font-weight: 600;
-        color:var(--default);
+        color: var(--default);
     }
 }
-.nav-right{
-    >ul{
+
+.nav-right {
+    >ul {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 32px;
         list-style: none;
-        >li{
 
-            >button{
+        >li {
+
+            >button {
                 background-color: transparent;
-                >a{
+
+                >a {
                     text-decoration: none;
                     font-size: 1.2rem;
                     font-weight: 600;
@@ -72,30 +84,35 @@ nav{
         }
     }
 }
-.nav-right>ul>li:last-child>button{
+
+.nav-right>ul>li:last-child>button {
     font-size: 1.2rem;
-    background-color:rgba(11, 2, 35, 0.1);
+    background-color: rgba(11, 2, 35, 0.1);
     padding: 20px 18px;
     border-radius: 15px;
     color: var(--font-color);
     font-weight: 600;
-    > a:first-child{
+
+    >a:first-child {
         color: red;
         font-size: 1.5rem;
         padding: 0 20px;
     }
-    > a:last-child{
+
+    >a:last-child {
         font-size: 1.5rem;
     }
 }
+
 /* banner section  */
-.banner{
+.banner {
     max-width: 1920px;
     margin: 0 auto;
     height: 700px;
     display: flex;
 }
-.banner-left{
+
+.banner-left {
     width: 50%;
     background: url(../images/Group\ 14.png);
     height: 100%;
@@ -106,38 +123,44 @@ nav{
     align-items: center;
     justify-content: center;
 }
-.banner-left-element{
 
-    >h2{
+.banner-left-element {
+
+    >h2 {
         font-size: 3rem;
         font-weight: 600;
         color: var(--second);
     }
-    >h1{
+
+    >h1 {
         font-size: 6rem;
         font-weight: 800;
-        background: linear-gradient(#F948B2,#8758F1);
+        background: linear-gradient(#F948B2, #8758F1);
         background-clip: text;
         color: transparent;
     }
-    >.banner-element{
-        >p{
-            font-size:1.3rem ;
+
+    >.banner-element {
+        >p {
+            font-size: 1.3rem;
             color: var(--font-color);
             font-weight: 500;
             padding-top: 15px;
-            >i{
+
+            >i {
                 color: var(--default);
                 padding-right: 15px;
             }
         }
     }
-    >.btn{
+
+    >.btn {
         padding-top: 40px;
         width: 100%;
         display: flex;
         justify-content: space-between;
-        >button{
+
+        >button {
             color: white;
             font-size: 1.3rem;
             font-weight: 600;
@@ -145,14 +168,17 @@ nav{
             background-color: var(--default);
             border-radius: 50px;
         }
-        >button:last-child{
+
+        >button:last-child {
             background-color: #4EC5F7;
         }
     }
 }
-.banner-right{
+
+.banner-right {
     width: 50%;
-    >img{
+
+    >img {
         height: 100%;
         width: 80%;
         object-fit: cover;
@@ -161,42 +187,49 @@ nav{
 
 /* gamer section  */
 
-.gamer{
-    background-color: rgba(249, 72, 178,0.03);
+.gamer {
+    background-color: rgba(249, 72, 178, 0.03);
     padding: 50px 0;
 }
-.gamer-content{
+
+.gamer-content {
     display: flex;
     margin: 0 auto;
     justify-content: right;
     max-width: 1440px;
     gap: 50px;
 }
-.gamer-left{
+
+.gamer-left {
     max-width: 50%;
-    > img{
+
+    >img {
         width: 100%;
     }
 }
-.gamer-right{
-max-width: 40%;
-text-align: right;
-    >h1{
+
+.gamer-right {
+    max-width: 40%;
+    text-align: right;
+
+    >h1 {
         font-size: 3rem;
         font-weight: 700;
         line-height: auto;
-        background: linear-gradient(#F948B2,#8758F1);
+        background: linear-gradient(#F948B2, #8758F1);
         background-clip: text;
         color: transparent;
         padding: 20px 0;
     }
-    >p{
+
+    >p {
         color: var(--font-color);
         line-height: 30px;
         letter-spacing: 0.3px;
         font-weight: 400;
     }
-    > button{
+
+    >button {
         color: white;
         font-size: 1.3rem;
         font-weight: 600;
@@ -205,21 +238,124 @@ text-align: right;
         border-radius: 50px;
         margin: 30px 0;
     }
-    >h3{
+
+    >h3 {
         color: var(--font-color);
         font-weight: 500;
         font-size: 1.5rem;
         line-height: 40px;
     }
-    >h2{
+
+    >h2 {
         font-size: 2rem;
         font-weight: 700;
         color: var(--font-color);
+
         &:before {
             content: open-quote;
         }
-        &:after{
+
+        &:after {
             content: close-quote;
+        }
+    }
+}
+
+/* game card section  */
+
+.game-card {
+    margin: 160px auto;
+    max-width: 1440px;
+}
+
+.card-top {
+    text-align: center;
+    padding-bottom: 50px;
+
+    >h1 {
+        font-size: 3rem;
+        font-weight: 700;
+
+        >span {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: auto;
+            background: linear-gradient(#F948B2, #8758F1);
+            background-clip: text;
+            color: transparent;
+        }
+    }
+
+    >p {
+        font-size: 1.2rem;
+        color: var(--font-color);
+        letter-spacing: 0.3px;
+        line-height: 30px;
+        padding-top: 16px;
+    }
+}
+
+.card-bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    position: relative;
+
+    >.card>.game {
+        height: 400px;
+        width: 100%;
+        background-color: var(--default);
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+    }
+
+    >.card>p {
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 30px;
+        color: var(--font-color);
+        padding-top: 20px;
+    }
+
+    >.card>.game>.over {
+        height: 400px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.479);
+        display: none;
+        position: relative;
+        border-radius: 20px;
+
+        >i {
+            color: white;
+            font-size: 3rem;
+            position: absolute;
+            top: 45%;
+            left: 45%;
+        }
+    }
+
+    .card>.game:hover .over {
+        display: block;
+        outline: 5px solid red;
+    }
+
+    >.card {
+        >.one {
+            background: url(../images/Rectangle\ 4.png);
+        }
+
+        >.three{
+            background: url(../images/Rectangle\ 3.png);
+        }
+        >.two {
+            background: url(../images/Rectangle\ 5.png);
+        }
+        >.three{
+            background: url(../images/Rectangle\ 7.png);
+        }
+        >.four{
+            background: url(../images/Rectangle\ 6.png);
         }
     }
 }

@@ -107,8 +107,26 @@
         >h3 {
             font-size: 1rem;
         }
-        >h2{
+
+        >h2 {
             font-size: 1.2rem;
+        }
+
+    }
+
+    /* game card section  */
+
+    .card-bottom {
+        grid-template-columns: repeat(1, 1fr);
+        >.card{
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            >p{
+                text-align: center;
+                max-width: 250px;
+            }
         }
 
     }
