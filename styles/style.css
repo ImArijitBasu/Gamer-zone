@@ -343,19 +343,118 @@ nav {
     >.card {
         >.one {
             background: url(../images/Rectangle\ 4.png);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
-        >.three{
-            background: url(../images/Rectangle\ 3.png);
-        }
         >.two {
             background: url(../images/Rectangle\ 5.png);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         >.three{
             background: url(../images/Rectangle\ 7.png);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         >.four{
             background: url(../images/Rectangle\ 6.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+/* play section  */
+
+.play{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.play-top{
+    display: flex;
+    margin-bottom: 250px;
+    align-items: center;
+    justify-content: space-between;
+    > .top-first{
+        max-width: 40%;
+        text-align: right;
+        padding-left: 15%;
+        >h1{
+            font-size: 3rem;
+            line-height: 60px;
+            >span{
+                font-size: 3rem;
+                font-weight: 700;
+                line-height: auto;
+                background: linear-gradient(#F948B2, #8758F1);
+                background-clip: text;
+                color: transparent;
+            }
+        }
+        >p{
+            font-size: 1.2rem;
+            padding-top: 20px;
+            line-height: 30px;
+            font-weight: 400;
+            color: var(--font-color);
+        }
+    }
+    > .top-second{
+        max-width: 50%;
+        position: relative;
+        > .img-one{
+            max-width: 100%;
+        }
+        > .img-two{
+            position: absolute;
+            left: -150px;
+            bottom: -100px;
+            max-width: 100%;
+        }
+    }
+}
+.play-bottom{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 150px;
+    align-items: center;
+    justify-content: space-between;
+    > .bottom-first{
+        max-width: 45%;
+        text-align: left;
+        padding-left: 15%;
+        >h1{
+            font-size: 3rem;
+            line-height: 60px;
+            >span{
+                font-size: 3rem;
+                font-weight: 700;
+                line-height: auto;
+                background: linear-gradient(#F948B2, #8758F1);
+                background-clip: text;
+                color: transparent;
+            }
+        }
+        >p{
+            font-size: 1.2rem;
+            padding-top: 20px;
+            line-height: 30px;
+            font-weight: 400;
+            color: var(--font-color);
+        }
+    }
+    > .bottom-second{
+        max-width: 50%;
+        position: relative;
+        > .img-one{
+            max-width: 100%;
+        }
+        > .img-two{
+            position: absolute;
+            right: -150px;
+            bottom: -100px;
+            max-width: 100%;
         }
     }
 }

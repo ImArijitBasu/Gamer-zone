@@ -68,7 +68,7 @@
     /* gamer section  */
     .gamer {
         padding: 0;
-        background-color: none;
+        background-color: transparent;
     }
 
     .gamer-content {
@@ -127,7 +127,46 @@
                 text-align: center;
                 max-width: 250px;
             }
+            > .game{
+                max-width: 80%;
+            }
         }
 
+    }
+
+    /* play section  */
+    .play-top , .play-bottom{
+        flex-direction: column;
+        margin-bottom: 100px;
+        > .first{
+            max-width: 100%;
+            text-align: center;
+            transform: scale(0.8);
+            padding: 0;
+        }
+        > .second{
+            max-width: 80%;
+            right: -20px;
+            position: relative;
+            > .img-one{
+                max-width: 100%;
+            }
+            > .img-two{
+                position: absolute;
+                left: -50px;
+                bottom: -50px;
+                max-width: 40%;
+            }
+        }
+    }
+    .play-bottom{
+        >.second{
+            right: auto;
+            left: -20px;
+            >.img-two{
+                left: auto;
+                right: -50px;
+            }
+        }
     }
 }
